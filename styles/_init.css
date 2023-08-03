@@ -1,0 +1,24 @@
+:root {
+    --white: #fff;
+    --alt: #2190B4;
+    --bg-gradient: linear-gradient(140deg, #040810 0%, #000C38 100%);
+    --title-gradient: linear-gradient(90deg, #83ADFF 0%, #B398FF 100%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+body {
+    background: var(--bg-gradient) fixed;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    padding: 0 max(calc((100vw - 1270px) / 2), 50px);
+}

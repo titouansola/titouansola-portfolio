@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-top: 50px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+header nav a:hover {
+    color: var(--alt);
+}
+
+h1, h2 {
+    background: var(--title-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+h2 {
+    margin: auto;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+section {
+    position: relative;
+}

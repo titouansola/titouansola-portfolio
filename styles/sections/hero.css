@@ -1,0 +1,39 @@
+#hero {
+    margin-top: -74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+h1 {
+    font-size: 84px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.subtitle b {
+    font-weight: bold;
+}
+
+.subtitle span {
+    color: #2190B4;
+}
+
+.face-wrapper {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.face-wrapper img {
+    width: 100%;
+}
