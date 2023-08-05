@@ -1,0 +1,96 @@
+#recommendations {
+    margin-top: 100px;
+    padding-top: 100px;
+    min-height: 900px;
+}
+
+.recommendation {
+    margin-top: 100px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: pulse var(--recommendation-timer) infinite;
+}
+
+.recommendation:before {
+    content: '';
+    position: absolute;
+    background: var(--dark);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+.recommendation:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: var(--alt);
+    animation: timer var(--recommendation-timer) linear infinite;
+}
+
+.recommendation-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.recommendation-job {
+    font-weight: 100;
+}
+
+.recommendation-tools {
+    --size: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    gap: 15px;
+    height: var(--size);
+}
+
+.recommendation-tools img {
+    max-width: calc(var(--size) * 2);
+}
+
+.recommendation-content {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@keyframes timer {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .recommendation-tools {
+        position: relative;
+        top: unset;
+        right: unset;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}

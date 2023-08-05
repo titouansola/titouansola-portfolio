@@ -3,3 +3,5 @@
 @import "_base.css";
 @import "sections/hero.css";
 @import "sections/tools.css";
+@import "sections/recommendations.css";
+@import "sections/projects.css";

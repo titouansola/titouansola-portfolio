@@ -13,7 +13,6 @@
         <a href="#tools">Tools</a>
         <a href="#recommendations">Recommendations</a>
         <a href="#projects">Projects</a>
-        <a href="#socials">Socials</a>
       </nav>
     </header>
 
@@ -41,34 +40,75 @@
         </div>
         <div class="tools-content">
           <div class="tools-row">
-            <img src="/tools/react.svg" alt="react logo">
-            <img src="/tools/typescript.svg" alt="typescript logo">
-            <img src="/tools/angular.svg" alt="angular logo">
+            <img src="/tools/white/react-white.svg" alt="react logo">
+            <img src="/tools/white/typescript-white.svg" alt="typescript logo">
+            <img src="/tools/white/angular-white.svg" alt="angular logo">
           </div>
           <div class="tools-row">
-            <img src="/tools/node.svg" alt="node logo">
-            <img src="/tools/springboot.svg" alt="springboot logo">
+            <img src="/tools/white/node-white.svg" alt="node logo">
+            <img src="/tools/white/springboot-white.svg" alt="springboot logo">
           </div>
           <div class="tools-row">
-            <img src="/tools/mysql.svg" alt="mysql logo">
-            <img src="/tools/postgresql.svg" alt="postgresql logo">
-            <img src="/tools/mongodb.svg" alt="mongodb logo">
+            <img src="/tools/white/mysql-white.svg" alt="mysql logo">
+            <img src="/tools/white/postgresql-white.svg" alt="postgresql logo">
+            <img src="/tools/white/mongodb-white.svg" alt="mongodb logo">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="recommendations">
+    <section id="recommendations" x-data="recommendationState">
       <h2>They talk about me</h2>
+      <article class="recommendation">
+        <div class="recommendation-tools">
+          <template x-for="tool in current.tools">
+            <img :src="'/tools/alt/'+tool+'-alt.svg'" :alt="tool" >
+          </template>
+        </div>
+        <h3 x-text="current.name" class="recommendation-name"></h3>
+        <p x-text="current.job" class="recommendation-job"></p>
+        <p x-text="current.content" class="recommendation-content"></p>
+      </article>
     </section>
 
     <section id="projects">
       <h2>Personal projects</h2>
+
+      <article class="project">
+        <div class="project-description">
+          <h3>Time's Up</h3>
+          <p>
+            I tried to “digitized” a game I play with friends : Two teams of players have to guess words, the more you guess, the more you win!
+          </p>
+          <ul>
+            <li>Each player enters secretly 5 words.</li>
+            <li>One player per team has to make the other guess words in a short amount of time.</li>
+            <li>There are 3 phases. First, player can describe totally the word. Then, they can use only one word. Finally, they have to use mimes.</li>
+          </ul>
+        </div>
+        <div class="project-illustration">
+          <img src="/projects/timesup.png" alt="Time's up project mockup">
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-illustration">
+          <img src="/projects/festiplanner.png" alt="Festiplanner project mockup">
+        </div>
+        <div class="project-description">
+          <h3>Festiplanner</h3>
+          <p>
+            Festiplanner is a volunteer's shift management tool dedicated to festival organizers.<br/><br/>
+            Each shift requires a certain amount of volunteers to achieve missions, but they also want to see their favorite perfomers! With Festiplanner, volunteers have now the ability to organize themselves and be assured that shifts do not overlap with a show they want to assist to.<br/><br/>
+            Organizers of course will set some rules, to avoid understaffing/overstaffing issues.
+          </p>
+        </div>
+      </article>
     </section>
 
-    <section id="socials">
-      <h2>Socials</h2>
-    </section>
+    <footer>
+      <p>Copyrights © Titouan Sola. Made with 💜</p>
+    </footer>
   </main>
 
 <!-- SCRIPTS -->
