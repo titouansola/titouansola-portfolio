@@ -11,12 +11,15 @@ Alpine.data('recommendationState', () => ({
     index: 0,
     current: recommendations[0],
     recommendationList: recommendations,
+    interval: null,
 
     init() {
-        setInterval(() => {
-            this.index = (this.index + 1) % recommendations.length;
-            this.current = recommendations[this.index];
-        }, this.recommendationTimer);
+        if (this.interval === null) {
+            this.inverval = setInterval(() => {
+                this.index = (this.index + 1) % recommendations.length;
+                this.current = recommendations[this.index];
+            }, this.recommendationTimer);
+        }
     },
 
     get recommendationTimer() {
