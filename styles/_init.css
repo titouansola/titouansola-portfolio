@@ -1,6 +1,8 @@
 :root {
     --white: #fff;
     --alt: #2190B4;
+    --tint: #D3385D;
+    --dark-tint: #9E2643;
     --dark: #153360;
     --black: #030303;
     --recommendation-timer: 15000ms;
@@ -28,7 +30,7 @@ a {
 
 main {
     position: relative;
-    padding: 0 max(calc((100vw - 1270px) / 2), 50px) 200px;
+    padding: 0 max(calc((100vw - 1270px) / 2), 50px) 300px;
 }
 
 img {

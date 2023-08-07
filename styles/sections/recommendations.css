@@ -1,7 +1,8 @@
 #recommendations {
+    position: relative;
     margin-top: 100px;
     padding-top: 100px;
-    min-height: 900px;
+    min-height: 650px;
 }
 
 .recommendation {
@@ -10,6 +11,7 @@
     padding: 40px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 4px 6px 12px rgba(var(--black), .5);
     animation: pulse var(--recommendation-timer) infinite;
 }
 
@@ -62,6 +64,28 @@
     margin-top: 30px;
     font-size: 20px;
     text-align: justify;
+}
+
+.go-to-linkedin-link {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.go-to-linkedin-link button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--white);
+    background: var(--tint);
+    cursor: pointer;
+    transition: background 300ms ease;
+}
+
+.go-to-linkedin-link button:hover {
+    background: var(--dark-tint);
 }
 
 @keyframes timer {
