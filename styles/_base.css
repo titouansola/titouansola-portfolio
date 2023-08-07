@@ -1,9 +1,16 @@
+/* MAIN */
+main {
+    position: relative;
+    padding: 0 max(calc((100vw - 1270px) / 2), 50px) 300px;
+}
+
 /* HEADER */
 header {
     position: relative;
     z-index: 1;
     width: 100%;
     padding-top: 50px;
+    animation: hidden 500ms, header-anim 1s ease 500ms;
 }
 
 header nav {
@@ -51,4 +58,36 @@ h2 {
 
 section {
     position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.reveal {
+    transition: all 1s ease;
+}
+
+.reveal:not(.active) {
+    opacity: 0;
+    translate: 0 100px;
+}
+
+/* ANIMATIONS */
+@keyframes hidden {
+    from {
+        opacity: 0;
+        translate: -50%;
+    }
+    to {
+        opacity: 0;
+        translate: -50%;
+    }
+}
+
+@keyframes header-anim {
+    from {
+        opacity: 0;
+        translate: 0 -30px;
+    }
 }

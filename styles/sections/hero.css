@@ -13,18 +13,19 @@
 h1 {
     font-size: 84px;
     font-weight: bold;
+    animation: title-anim 1s ease;
 }
 
 .subtitle {
     font-size: 30px;
-}
-
-.subtitle b {
     font-weight: bold;
+    animation: hidden 150ms, title-anim 1s ease 150ms;
 }
 
-.subtitle span {
+.description {
+    font-size: 30px;
     color: #2190B4;
+    animation: hidden 300ms, title-anim 1s ease 300ms;
 }
 
 .face-wrapper {
@@ -32,4 +33,23 @@ h1 {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
+    transform-origin: center;
+    animation: face-anim 1s ease;
+}
+
+
+
+/* ANIMATIONS */
+@keyframes title-anim {
+    from {
+        opacity: 0;
+        translate: -50px 0;
+    }
+}
+@keyframes face-anim {
+    from {
+        scale: .6;
+        rotate: 20deg;
+        opacity: 0;
+    }
 }

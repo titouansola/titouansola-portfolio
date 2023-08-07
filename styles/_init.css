@@ -27,12 +27,3 @@ body,
 a {
     color: var(--white);
 }
-
-main {
-    position: relative;
-    padding: 0 max(calc((100vw - 1270px) / 2), 50px) 300px;
-}
-
-img {
-    width: 100%;
-}

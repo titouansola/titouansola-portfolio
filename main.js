@@ -21,3 +21,21 @@ Alpine.data('recommendationState', () => ({
 }));
 
 Alpine.start();
+
+
+// Reveal animations
+function revealElements() {
+    document.querySelectorAll('.reveal').forEach(elt => {
+        const { innerHeight } = window;
+        const { top } = elt.getBoundingClientRect();
+        const offset = 100;
+
+        if (top < innerHeight - offset) {
+            elt.classList.add('active');
+        } else {
+            elt.classList.remove('active');
+        }
+    });
+}
+document.addEventListener('scroll', revealElements);
+revealElements();
