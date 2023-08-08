@@ -13,7 +13,7 @@
     },
     {
         "name": "Thomas Clement",
-        "job": "Deputy General Manager - Pytheas Navigation",
+        "job": "DGA - Pytheas Navigation",
         "content": "Titouan nous a accompagné dans le développement de l’interface utilisateur de notre futur dispositif de navigation chirurgical. Nous avons tous apprécié ses grandes qualités d’écoute et d’adaptation ainsi que ses compétences techniques indéniables. Je recommande vivement Titouan.",
         "tools": ["react", "typescript", "node"]
     }

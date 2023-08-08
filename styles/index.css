@@ -1,7 +1,14 @@
 @import "_font.css";
 @import "_init.css";
 @import "_base.css";
+/* Regular */
 @import "sections/hero.css";
 @import "sections/tools.css";
 @import "sections/recommendations.css";
 @import "sections/projects.css";
+/* Mobile */
+@import "screen-500/base.css";
+@import "screen-500/hero.css";
+@import "screen-500/tools.css";
+@import "screen-500/recommendations.css";
+@import "screen-500/projects.css";

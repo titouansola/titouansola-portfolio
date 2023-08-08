@@ -1,0 +1,26 @@
+@media screen and (max-width: 500px) {
+    .recommendation {
+        padding: 20px;
+    }
+
+    .recommendation-content {
+        font-size: 16px;
+        height: 200px;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #ffffffff 70%, #ffffff00);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .go-to-linkedin-link {
+        position: relative;
+        translate: 0;
+        left: 0;
+    }
+    .go-to-linkedin-link button {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 16px;
+    }
+}

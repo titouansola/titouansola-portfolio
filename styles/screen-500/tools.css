@@ -1,0 +1,30 @@
+@media screen and (max-width: 500px) {
+    #tools {
+        --size: 300px;
+        padding: 0;
+    }
+
+    .tools-container {
+        margin-top: 25px;
+    }
+
+    .tools-content {
+        gap: 75px;
+    }
+
+    .tools-row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tools-row img {
+        width: 50px;
+    }
+    .tools-row img.wide {
+        width: 100px;
+    }
+
+    .tools-spinner-wrapper {
+        display: none;
+    }
+}

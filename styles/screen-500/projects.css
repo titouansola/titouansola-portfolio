@@ -1,0 +1,27 @@
+@media screen and (max-width: 500px) {
+    #projects {
+        gap: 100px;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .project-description {
+        width: 100%;
+        padding: 0;
+    }
+
+    .project-illustration {
+        width: 300px;
+    }
+
+    .project-illustration + .project-description {
+        text-align: justify;
+        padding: 0;
+        order: -1;
+    }
+}

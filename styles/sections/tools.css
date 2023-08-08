@@ -22,7 +22,14 @@
 
 .tools-row {
     display: flex;
-    gap: calc(var(--size) * .25);
+    gap: 25px calc(var(--size) * .25);
+}
+
+.tools-row img {
+    width: 70px;
+}
+.tools-row img.wide {
+    width: 140px;
 }
 
 .tools-spinner-wrapper {

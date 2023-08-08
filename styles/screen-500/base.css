@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 30px 200px;
+    }
+
+    header {
+        display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
