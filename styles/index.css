@@ -7,8 +7,8 @@
 @import "sections/recommendations.css";
 @import "sections/projects.css";
 /* Mobile */
-@import "screen-500/base.css";
-@import "screen-500/hero.css";
-@import "screen-500/tools.css";
-@import "screen-500/recommendations.css";
-@import "screen-500/projects.css";
+@import "small-devices/base.css";
+@import "small-devices/hero.css";
+@import "small-devices/tools.css";
+@import "small-devices/recommendations.css";
+@import "small-devices/projects.css";

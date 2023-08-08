@@ -108,13 +108,3 @@
         opacity: 0;
     }
 }
-
-@media screen and (max-width: 1000px) {
-    .recommendation-tools {
-        position: relative;
-        top: unset;
-        right: unset;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-}
