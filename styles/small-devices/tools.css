@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
     #tools {
-        --size: 300px;
+        /*--size: 500px;*/
         padding: 0;
     }
 
@@ -15,12 +15,13 @@
     .tools-row {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 25px calc(var(--size) * .1);
     }
 
-    .tools-row img {
+    .tool {
         width: 50px;
     }
-    .tools-row img.wide {
+    .tool.wide {
         width: 100px;
     }
 

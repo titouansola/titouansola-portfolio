@@ -25,11 +25,36 @@
     gap: 25px calc(var(--size) * .25);
 }
 
-.tools-row img {
+.tool {
+    position: relative;
     width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 200ms ease;
+    cursor: pointer;
 }
-.tools-row img.wide {
+.tool.wide {
     width: 140px;
+}
+.tool:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 300ms ease;
+}
+
+.tool:hover:after {
+    opacity: 1;
 }
 
 .tools-spinner-wrapper {
@@ -40,6 +65,55 @@
     transform-origin: center;
     width: var(--size);
     height: var(--size);
+}
+
+.tool-angular {
+    background-image: url('/tools/white/angular-white.svg');
+}
+.tool-angular:after {
+    background-image: url('/tools/regular/angular.svg');
+}
+.tool-mongo {
+    background-image: url('/tools/white/mongo-white.svg');
+}
+.tool-mongo:after {
+    background-image: url('/tools/regular/mongo.svg');
+}
+.tool-mysql {
+    background-image: url('/tools/white/mysql-white.svg');
+}
+.tool-mysql:after {
+    background-image: url('/tools/regular/mysql.svg');
+}
+.tool-node {
+    background-image: url('/tools/white/node-white.svg');
+}
+.tool-node:after {
+    background-image: url('/tools/regular/node.svg');
+}
+.tool-postgresql {
+    background-image: url('/tools/white/postgresql-white.svg');
+}
+.tool-postgresql:after {
+    background-image: url('/tools/regular/postgresql.svg');
+}
+.tool-react {
+    background-image: url('/tools/white/react-white.svg');
+}
+.tool-react:after {
+    background-image: url('/tools/regular/react.svg');
+}
+.tool-springboot {
+    background-image: url('/tools/white/springboot-white.svg');
+}
+.tool-springboot:after {
+    background-image: url('/tools/regular/springboot.svg');
+}
+.tool-typescript {
+    background-image: url('/tools/white/typescript-white.svg');
+}
+.tool-typescript:after {
+    background-image: url('/tools/regular/typescript.svg');
 }
 
 @keyframes spin {
