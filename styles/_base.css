@@ -29,6 +29,10 @@ header nav a:hover {
     color: var(--alt);
 }
 
+.menu-btn {
+    display: none;
+}
+
 /* FOOTER */
 footer {
     position: absolute;
