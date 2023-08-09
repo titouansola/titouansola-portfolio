@@ -2,17 +2,16 @@
     position: relative;
     margin-top: 100px;
     padding-top: 100px;
-    min-height: 650px;
+    min-height: 750px;
 }
 
 .recommendation {
-    margin-top: 100px;
     position: relative;
+    margin-top: 75px;
     padding: 40px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 4px 6px 12px rgba(var(--black), .5);
-    animation: pulse var(--recommendation-timer) infinite;
 }
 
 .recommendation:before {
@@ -25,16 +24,6 @@
     height: 100%;
     z-index: -1;
     opacity: .5;
-}
-
-.recommendation:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background: var(--alt);
-    animation: timer var(--recommendation-timer) linear infinite;
 }
 
 .recommendation-name {
@@ -66,6 +55,34 @@
     text-align: justify;
 }
 
+.recommendation-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin: 50px auto 0;
+}
+
+.recommendation-control {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.recommendation-control img {
+    transition: translate 500ms ease;
+}
+
+.recommendation-control:hover img {
+    translate: -10px 0;
+}
+
+.recommendation-page + .recommendation-control:hover img {
+    translate: 10px 0;
+}
+
 .go-to-linkedin-link {
     position: absolute;
     bottom: 0;
@@ -86,25 +103,4 @@
 
 .go-to-linkedin-link button:hover {
     background: var(--dark-tint);
-}
-
-@keyframes timer {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0;
-    }
-    10%, 90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }

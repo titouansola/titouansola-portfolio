@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titouan Sola · Web developer - Software engineer</title>
   </head>
@@ -11,14 +10,14 @@
     <header x-data="{ opened: false, toggle() { this.opened = window.innerWidth < 1000 && !this.opened } }">
       <nav :class="opened ? 'nav-opened' : ''">
         <button class="menu-btn" @click="toggle()">
-          <img src="/x.svg" alt="close menu button">
+          <img src="/icons/x.svg" alt="close menu button">
         </button>
         <a href="#tools" @click="toggle()">Tools</a>
         <a href="#recommendations" @click="toggle()">Recommendations</a>
         <a href="#projects" @click="toggle()">Projects</a>
       </nav>
       <button class="menu-btn" @click="toggle()">
-        <img src="/menu.svg" alt="open menu button">
+        <img src="/icons/menu.svg" alt="open menu button">
       </button>
     </header>
 
@@ -69,6 +68,15 @@
         <h3 x-text="current.name" class="recommendation-name"></h3>
         <p x-text="current.job" class="recommendation-job"></p>
         <p x-text="current.content" class="recommendation-content"></p>
+        <div class="recommendation-toolbar">
+          <button class="recommendation-control" @click="onChange(-1)">
+            <img src="/icons/chevron-left.svg" alt="recommendation control, left direction">
+          </button>
+          <span class="recommendation-page" x-text="index+1"></span>
+          <button class="recommendation-control" @click="onChange(1)">
+            <img src="/icons/chevron-right.svg" alt="recommendation control right, direction">
+          </button>
+        </div>
       </article>
       <a href="https://www.linkedin.com/in/titouansola/" target="_blank" class="go-to-linkedin-link">
         <button>Contact me on LinkedIn</button>
@@ -82,12 +90,12 @@
         <div class="project-description">
           <h3>Time's Up</h3>
           <p>
-            I tried to “digitized” a game I play with friends : Two teams of players have to guess words, the more you guess, the more you win!
+            I wanted to “digitized” a game I play with friends : Two teams of players have to guess words. The more you guess, the more you win!
           </p>
           <ul>
             <li>Each player enters secretly 5 words.</li>
-            <li>One player per team has to make the other guess words in a short amount of time.</li>
-            <li>There are 3 phases. First, player can describe totally the word. Then, they can use only one word. Finally, they have to use mimes.</li>
+            <li>One player per team has to make them mates guess words in a short amount of time.</li>
+            <li>There are 3 phases. First, players are allowed to use as many details as they want. Then, they can use only one word. Finally, they have to use mimes.</li>
           </ul>
         </div>
         <div class="project-illustration">

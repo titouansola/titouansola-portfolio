@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+    #recommendations {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
     .recommendation {
         padding: 20px;
     }
@@ -6,11 +11,11 @@
     .recommendation-content {
         font-size: 16px;
         height: 200px;
-        overflow: hidden;
-        background: linear-gradient(to bottom, #ffffffff 70%, #ffffff00);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        overflow: auto;
+    }
+
+    .recommendation-content::-webkit-scrollbar {
+        display: none;
     }
 
     .recommendation-tools {
@@ -19,6 +24,14 @@
         right: unset;
         justify-content: center;
         margin-bottom: 30px;
+    }
+
+    .recommendation-toolbar {
+        width: 100%;
+    }
+
+    .recommendation-toolbar img {
+        translate: 0 !important;
     }
 
     .go-to-linkedin-link {
