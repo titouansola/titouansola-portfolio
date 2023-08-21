@@ -1,12 +1,13 @@
 import Alpine from 'alpinejs';
 import recommendations from './assets/recommendations.json';
+import { inject } from '@vercel/analytics';
 
 import './styles/index.css';
 
 
+
 // Alpine setup
 window.Alpine = Alpine;
-
 Alpine.data('recommendationState', () => ({
     index: 0,
     current: recommendations[0],
@@ -17,7 +18,6 @@ Alpine.data('recommendationState', () => ({
         this.current = recommendations[this.index];
     }
 }));
-
 Alpine.start();
 
 
@@ -38,3 +38,8 @@ function revealElements() {
 }
 document.addEventListener('scroll', revealElements);
 revealElements();
+
+
+
+// Vercel analytics
+inject();

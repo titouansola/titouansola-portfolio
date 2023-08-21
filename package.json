@@ -13,6 +13,7 @@
     "vite-plugin-favicons-inject": "^2.2.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.2",
     "alpinejs": "^3.12.3"
   }
 }
