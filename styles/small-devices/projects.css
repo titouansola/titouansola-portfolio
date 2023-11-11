@@ -24,4 +24,9 @@
         padding: 0;
         order: -1;
     }
+
+
+    .project-illustration + .project-description ul {
+        all: initial;
+    }
 }
