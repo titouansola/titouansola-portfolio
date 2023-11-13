@@ -23,6 +23,10 @@ header nav {
 header nav a {
     text-decoration: none;
     transition: color 200ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 header nav a:hover {

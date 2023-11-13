@@ -2,10 +2,6 @@ import Alpine from 'alpinejs';
 import recommendations from './assets/recommendations.json';
 import { inject } from '@vercel/analytics';
 
-import './styles/index.css';
-
-
-
 // Alpine setup
 window.Alpine = Alpine;
 Alpine.data('recommendationState', () => ({
