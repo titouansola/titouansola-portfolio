@@ -1,19 +1,28 @@
 {
   "name": "titouansola-portfolio",
+  "version": "2.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^4.5",
-    "vite-plugin-favicons-inject": "^2.2.0"
+    "prepare": "panda codegen",
+    "dev": "rm -rf .next && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2",
-    "alpinejs": "^3.12.3"
+    "lucide-react": "^0.303.0",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.23.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "prettier": "^3.1.1",
+    "typescript": "^5"
   }
 }
