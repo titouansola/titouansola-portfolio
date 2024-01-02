@@ -7,7 +7,7 @@ export function Header() {
       className={flex({
         align: 'center',
         justify: 'space-between',
-        h: '100px',
+        height: '100px',
       })}
     >
       <div></div>

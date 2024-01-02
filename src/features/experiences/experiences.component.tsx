@@ -1,5 +1,6 @@
 import { css, cx } from '@styles/css';
 import { flex } from '@styles/patterns';
+import { Section } from '@/common/ui/section.component';
 
 const companies = [
   {
@@ -26,19 +27,13 @@ const companies = [
 
 export function Experiences() {
   return (
-    <section
-      className={css({
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '50px',
-      })}
-    >
+    <Section>
       <h2>Previous clients</h2>
       <div
         className={flex({
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: { base: 'space-between', xlDown: 'center' },
+          wrap: 'wrap',
+          align: 'center',
+          justify: { base: 'space-between', xlDown: 'center' },
           gap: '5rem',
         })}
       >
@@ -57,6 +52,6 @@ export function Experiences() {
           </a>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

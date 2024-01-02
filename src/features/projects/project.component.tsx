@@ -43,7 +43,7 @@ function ProjectBlock({ project }: { project: ProjectModel }) {
       {/* PROJECT DESCRIPTION */}
       <div
         className={flex({
-          flexDirection: 'column',
+          direction: 'column',
           gap: '1rem',
           paddingInline: '1rem',
           paddingBlock: '1.5rem',
@@ -51,7 +51,7 @@ function ProjectBlock({ project }: { project: ProjectModel }) {
       >
         <h4
           className={flex({
-            alignItems: 'center',
+            align: 'center',
             gap: '0.5rem',
             fontSize: '1.5rem',
             fontWeight: '700',

@@ -24,14 +24,6 @@ export default defineConfig({
       flexDirection: 'column',
       gap: '100px',
     },
-    section: {
-      display: 'flex',
-      paddingBlock: '50px',
-      '& > h2': {
-        fontSize: '2rem',
-        fontWeight: '700',
-      },
-    },
     '.mask': {
       maskRepeat: 'no-repeat',
       maskSize: '100%',

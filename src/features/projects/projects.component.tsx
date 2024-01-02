@@ -1,13 +1,12 @@
-import { css } from '@styles/css';
-import { Badge } from '@/common/ui/atoms/badge.component';
+import { flex } from '@styles/patterns';
 import { ProjectModel } from '@/features/projects/project.model';
 import { Project } from '@/features/projects/project.component';
-import { flex } from '@styles/patterns';
+import { Section } from '@/common/ui/section.component';
 
 const projects: ProjectModel[] = [
   {
     title: 'Roller Derby Quizz',
-    image: '/rdq.png',
+    image: '/projects/rdq.png',
     imageAlt: 'Roller Derby Quizz screenshot',
     url: 'https://roller-derby-quizz.vercel.app',
     description:
@@ -16,7 +15,7 @@ const projects: ProjectModel[] = [
   },
   {
     title: 'IPPSOP',
-    image: '/ippsop.png',
+    image: '/projects/ippsop.png',
     imageAlt: 'IPPSOP screenshot',
     url: 'https://ippsop.fr',
     description:
@@ -25,7 +24,7 @@ const projects: ProjectModel[] = [
   },
   {
     title: "Time's up",
-    image: '/timesup.png',
+    image: '/projects/timesup.png',
     imageAlt: "Time's up screenshot",
     description:
       'Project description. Lorem ipsum dolor sit amet cogito ergo sum je sais pas quoi dire de plus en latin',
@@ -35,20 +34,13 @@ const projects: ProjectModel[] = [
 
 export function Projects() {
   return (
-    <section
-      className={css({
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '50px',
-      })}
-    >
+    <Section>
       <h2>Public projects</h2>
-      {/* PROJECT GROUPS */}
       <div
         className={flex({
+          justify: 'space-between',
+          wrap: 'wrap',
           gap: '3rem',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
           width: '100%',
         })}
       >
@@ -56,6 +48,6 @@ export function Projects() {
           <Project key={project.title} project={project} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

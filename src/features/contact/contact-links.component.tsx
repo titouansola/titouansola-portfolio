@@ -6,9 +6,10 @@ export function ContactLists() {
   return (
     <div
       className={flex({
+        wrap: 'wrap',
+        justify: { lgDown: 'center' },
         gap: '0.5rem',
-        flexWrap: 'wrap',
-        justifyContent: { lgDown: 'center' },
+        width: '100%',
       })}
     >
       <a href={'https://twitter.com/Kanaa_ts'} target={'_blank'}>

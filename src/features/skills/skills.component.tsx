@@ -1,5 +1,6 @@
 import { css } from '@styles/css';
 import { flex } from '@styles/patterns';
+import { Section } from '@/common/ui/section.component';
 
 const skillGroups = [
   {
@@ -22,19 +23,13 @@ const skillGroups = [
 
 export function Skills() {
   return (
-    <section
-      className={css({
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '50px',
-      })}
-    >
+    <Section>
       <h2>Skills</h2>
       <div
         className={flex({
-          flexWrap: 'wrap',
+          wrap: 'wrap',
+          justify: 'space-between',
           gap: { base: '5rem', mdDown: '3rem' },
-          justifyContent: 'space-between',
           width: '100%',
         })}
       >
@@ -48,16 +43,16 @@ export function Skills() {
           >
             <h3
               className={css({
+                marginBottom: '1rem',
                 fontSize: '1.25rem',
                 fontWeight: '700',
-                marginBottom: '1rem',
               })}
             >
               {group.title}
             </h3>
             <ul
               className={flex({
-                flexDirection: 'column',
+                direction: 'column',
                 gap: '0.5rem',
               })}
             >
@@ -68,6 +63,6 @@ export function Skills() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

@@ -1,15 +1,10 @@
-import { ContactLists } from '@/features/contact/contact-links.component';
 import { css } from '@styles/css';
+import { ContactLists } from '@/features/contact/contact-links.component';
+import { Section } from '@/common/ui/section.component';
 
 export function Contact() {
   return (
-    <section
-      className={css({
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '50px',
-      })}
-    >
+    <Section>
       <h2>Contact</h2>
       <div>
         <p className={css({ textAlign: 'center', marginBottom: '1.5rem' })}>
@@ -17,6 +12,6 @@ export function Contact() {
         </p>
         <ContactLists />
       </div>
-    </section>
+    </Section>
   );
 }
