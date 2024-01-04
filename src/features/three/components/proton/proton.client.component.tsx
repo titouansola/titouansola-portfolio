@@ -12,7 +12,6 @@ import fragment from '@/features/three/components/proton/shaders/fragment.glsl';
 
 export function Proton() {
   const { protonRef, texture } = useProton();
-
   return (
     <mesh
       ref={protonRef}

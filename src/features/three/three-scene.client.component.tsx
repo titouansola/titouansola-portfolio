@@ -1,8 +1,8 @@
 'use client';
 
-import { Canvas } from '@react-three/fiber';
-import { Experience } from '@/features/three/experience.client.component';
 import { css } from '@styles/css';
+import { Canvas } from '@react-three/fiber';
+import { Experience } from '@/features/three/components/experience/experience.client.component';
 
 export function ThreeScene() {
   return (

@@ -1,11 +1,14 @@
+import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
-import './global.css';
+import localFont from 'next/font/local';
 import { Header } from '@/common/ui/header.component';
 import { Footer } from '@/common/ui/footer.component';
-import { PropsWithChildren } from 'react';
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+import './global.css';
+
+const font = localFont({
+  src: './fonts/GeneralSans-Variable.woff2',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={'dark'}>
-      <body className={montserrat.className} suppressHydrationWarning>
+      <body className={font.className} suppressHydrationWarning>
         <Header />
         <main>{children}</main>
         <Footer />

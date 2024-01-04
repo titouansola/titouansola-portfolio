@@ -4,7 +4,7 @@ import { Section } from '@/common/ui/section.component';
 
 export function Contact() {
   return (
-    <Section>
+    <Section id={'contact'}>
       <h2>Contact</h2>
       <div>
         <p className={css({ textAlign: 'center', marginBottom: '1.5rem' })}>

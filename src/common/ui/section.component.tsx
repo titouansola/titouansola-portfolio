@@ -4,11 +4,13 @@ import { SystemStyleObject } from '@styles/types';
 import { css, cx } from '@styles/css';
 
 export function Section({
+  id,
   children,
   cssProp = {},
-}: PropsWithChildren<{ cssProp?: SystemStyleObject }>) {
+}: PropsWithChildren<{ id: string; cssProp?: SystemStyleObject }>) {
   return (
     <section
+      id={id}
       className={cx(
         vstack({
           gap: '50px',

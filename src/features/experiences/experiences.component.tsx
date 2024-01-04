@@ -27,7 +27,7 @@ const companies = [
 
 export function Experiences() {
   return (
-    <Section>
+    <Section id={'experiences'}>
       <h2>Previous clients</h2>
       <div
         className={flex({

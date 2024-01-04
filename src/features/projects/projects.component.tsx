@@ -34,7 +34,7 @@ const projects: ProjectModel[] = [
 
 export function Projects() {
   return (
-    <Section>
+    <Section id={'projects'}>
       <h2>Public projects</h2>
       <div
         className={flex({

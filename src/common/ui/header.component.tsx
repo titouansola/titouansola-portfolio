@@ -19,10 +19,10 @@ export function Header() {
         })}
       >
         <nav className={flex({ align: 'center', gap: '1rem' })}>
-          <a>Skills</a>
-          <a>Projects</a>
-          <a>Experiences</a>
-          <a>Contact</a>
+          <a href={'#skills'}>Skills</a>
+          <a href={'#projects'}>Projects</a>
+          <a href={'#experiences'}>Experiences</a>
+          <a href={'#contact'}>Contact</a>
         </nav>
         <ThemeToggle />
       </div>
