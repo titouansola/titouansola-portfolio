@@ -10,7 +10,7 @@ const projects: ProjectModel[] = [
     imageAlt: 'Roller Derby Quizz screenshot',
     url: 'https://roller-derby-quizz.vercel.app',
     description:
-      'Project description. Lorem ipsum dolor sit amet cogito ergo sum je sais pas quoi dire de plus en latin',
+      'A quizz about the rules of Roller Derby. Questions are created, updated and moderated by the community itself.',
     tools: ['Next.js', 'Tailwind', 'Postgresql'],
   },
   {
@@ -19,7 +19,7 @@ const projects: ProjectModel[] = [
     imageAlt: 'IPPSOP screenshot',
     url: 'https://ippsop.fr',
     description:
-      'Project description. Lorem ipsum dolor sit amet cogito ergo sum je sais pas quoi dire de plus en latin',
+      'A professional website request by Gaël Guenec. Entreprenarial landing page refreshed, replacing an 11 years old website based on Joomla. The objective was to push IPPSOP into a modern digital communication.',
     tools: ['Next.js', 'Tailwind', 'Sanity'],
   },
   {
@@ -27,7 +27,7 @@ const projects: ProjectModel[] = [
     image: '/projects/timesup.png',
     imageAlt: "Time's up screenshot",
     description:
-      'Project description. Lorem ipsum dolor sit amet cogito ergo sum je sais pas quoi dire de plus en latin',
+      'Popular society game that I used to play at parties, I wanted to build an application to be able to play without papers and pen.',
     tools: ['Ionic', 'React'],
   },
 ];
