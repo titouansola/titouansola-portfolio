@@ -9,7 +9,11 @@ export function Project({ project }: { project: ProjectModel }) {
     return <ProjectBlock project={project} />;
   }
   return (
-    <a href={project.url} target={'_blank'}>
+    <a
+      href={project.url}
+      aria-label={`Project : ${project.description}`}
+      target={'_blank'}
+    >
       <ProjectBlock project={project} />
     </a>
   );
@@ -17,7 +21,7 @@ export function Project({ project }: { project: ProjectModel }) {
 
 function ProjectBlock({ project }: { project: ProjectModel }) {
   return (
-    <div
+    <article
       className={css({
         borderRadius: '1.5rem',
         overflow: 'hidden',
@@ -68,6 +72,6 @@ function ProjectBlock({ project }: { project: ProjectModel }) {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
