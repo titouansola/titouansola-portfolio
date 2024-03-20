@@ -19,15 +19,42 @@ const projects: ProjectModel[] = [
     imageAlt: 'IPPSOP screenshot',
     url: 'https://ippsop.fr',
     description:
-      'A professional website request by Gaël Guenec. Entreprenarial landing page refreshed, replacing an 11 years old website based on Joomla. The objective was to push IPPSOP into a modern digital communication.',
+      'A professional website request by Gaël Guenec. Fitness coach landing page, replacing an 11 years old website.',
     tools: ['Next.js', 'Tailwind', 'Sanity'],
+  },
+  {
+    title: 'Inversed Pendulum',
+    image: '/projects/inversed-pendulum-3d.png',
+    imageAlt: 'Inversed Pendulum 3D screenshot',
+    url: 'https://inversed-pendulum.vercel.app',
+    description:
+      'A 3D simulation of an inversed pendulum. The goal is to keep the pendulum balanced by moving the cart left and right.',
+    tools: ['React', 'Three.js', 'R3F', 'Rapier'],
+  },
+  {
+    title: '[WIP] Web Tuner',
+    image: '/projects/webtuner.png',
+    imageAlt: 'Web Tuner screenshot',
+    url: 'https://web-tuner.vercel.app',
+    description:
+      'A web application to help musicians tune their instruments. I am working on accessibility, and a better design.',
+    tools: ['JavaScript', 'Web Audio API'],
+  },
+  {
+    title: '[WIP] Othello',
+    image: '/projects/othello.png',
+    imageAlt: 'Othello screenshot',
+    url: 'https://othello-reverso.vercel.app',
+    description:
+      'A web application to play Othello / Reverso with 2 players on the same device. Red dots are shown at cells you can play on.',
+    tools: ['React', 'TypeScript'],
   },
   {
     title: "Time's up",
     image: '/projects/timesup.png',
     imageAlt: "Time's up screenshot",
     description:
-      'Popular society game that I used to play at parties, I wanted to build an application to be able to play without papers and pen.',
+      'Popular game that I used to play with friends, I wanted to build a web application to get rid of pen and paper.',
     tools: ['Ionic', 'React'],
   },
 ];

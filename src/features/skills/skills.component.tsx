@@ -13,11 +13,11 @@ const skillGroups = [
   },
   {
     title: 'Back End',
-    skills: ['Springboot', 'Postgresql', 'Mariadb'],
+    skills: ['Springboot', 'Postgresql', 'Mariadb', 'MongoDB'],
   },
   {
     title: 'Other',
-    skills: ['Git', 'Vercel'],
+    skills: ['Git', 'Agile methodology', 'Vercel'],
   },
 ];
 
