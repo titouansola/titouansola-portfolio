@@ -1,10 +1,4 @@
-import {
-  Github,
-  Linkedin,
-  LucideAtom,
-  LucideMail,
-  Twitter,
-} from 'lucide-react';
+import { Github, Linkedin, LucideAtom, LucideMail } from 'lucide-react';
 import { Badge } from '@/common/ui/atoms/badge.component';
 import { flex } from '@styles/patterns';
 
@@ -18,9 +12,6 @@ export function ContactLists() {
         width: '100%',
       })}
     >
-      <a href={'https://twitter.com/Kanaa_ts'} target={'_blank'}>
-        <Badge content={'Twitter'} Icon={Twitter} />
-      </a>
       <a href={'https://linkedin.com/in/titouansola'} target={'_blank'}>
         <Badge content={'Linkedin'} Icon={Linkedin} />
       </a>
