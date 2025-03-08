@@ -28,7 +28,7 @@ export function Skills() {
       <div
         className={flex({
           wrap: 'wrap',
-          justify: 'space-between',
+          justify: { base: 'space-between', mdDown: 'center' },
           gap: { base: '5rem', mdDown: '3rem' },
           width: '100%',
         })}
